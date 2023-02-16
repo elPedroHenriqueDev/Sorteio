@@ -1,5 +1,4 @@
-import  java.util.ThreadLocalRandomw;
-import java.util.concurrent.ThreadLocalRandom;
+import  java.util.concurrent.ThreadLocalRandom;
 public class ValorAleatorio{
 
     private int numMax;
@@ -7,7 +6,7 @@ public class ValorAleatorio{
     private int numSorteado;
 
     
-    Random aleat = ThreadLocalRandomw.corrent();
+    int aleat = ThreadLocalRandom.corrent().nextInt();
     
     public int getNumSorteado() {
         return numSorteado;
