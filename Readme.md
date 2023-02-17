@@ -1,1 +1,1 @@
-Aplicativo de sorteio usando classe de números aleatórios
+Aplicativo de sorteio usando classe de números aleatórios, com algumas funcoes
