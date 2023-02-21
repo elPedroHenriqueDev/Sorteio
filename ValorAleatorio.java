@@ -1,27 +1,25 @@
-import  java.util.concurrent.ThreadLocalRandom;
+import java.util.Random;
 public class ValorAleatorio{
 
     private int numMax;
     private final int numMin = 1;
     private int numSorteado;
 
-    
-    int aleat = ThreadLocalRandom.corrent().nextInt();
+    Random randomNum = new Random ();
     
     public int getNumSorteado() {
         return numSorteado;
     }
+
     public void setNumSorteado() {
-        
-        this.numSorteado = aleat.nextInt();
+        this.numSorteado =randomNum.nextInt(getNumMax()-getNumMin()+1)+getNumMin();;
     }
 
-
-    public int getMax() {
+    public int getNumMax() {
         return numMax;
     }
-    public void setMax(int max) {
-        numMax=max;
+    public void setNumMax(int numMax) {
+        this.numMax=numMax;
     }
     
     public int getNumMin() {
